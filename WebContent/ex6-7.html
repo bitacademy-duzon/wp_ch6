@@ -4,6 +4,42 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
+// 배열 정의, 배열 값 저장
+var a1 = new Array(10) //new Array()
+a1[0] = 0;
+a1[9] = 9;
+console.log("a1 length:" + a1.length);
+
+// 동적으로 크기가 변하는 배열(에러는 안 난다)
+// new Array(size) : 
+// size를 주는 것은 별다르게 의미가 없지만
+// 기본 사이즈를 주고 시작하면 성능 향상
+a1[10] = 10;
+console.log("a1 length:" + a1.length);
+
+var a2 = []; //literal
+console.log("a2 length:" + a2.length);
+a2[0] = 10;
+a2[1] = "Hello World";
+a2[2] = false;
+a2[3] = {
+	name: "둘리"		
+}
+console.log(a2);
+
+//초기화
+var a3 = [1, "ABC", true];
+console.log(a3);
+
+var a4 = new Array(1, "ABC", true);
+console.log(a4);
+
+
+	
+	
+
+
+
 </script>
 </head>
 <body>
